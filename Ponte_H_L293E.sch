@@ -13508,12 +13508,17 @@ Based on the following sources:
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="1.016" drill="0.3048">
-<clearance class="0" value="1.016"/>
+<class number="0" name="default" width="0.8" drill="0.6">
+<clearance class="0" value="0.6"/>
 </class>
-<class number="1" name="aa" width="1.27" drill="0.3048">
-<clearance class="0" value="1.016"/>
-<clearance class="1" value="1.016"/>
+<class number="1" name="aa" width="1" drill="0.6">
+<clearance class="0" value="0.8"/>
+<clearance class="1" value="0.8"/>
+</class>
+<class number="2" name="pwr" width="1.2" drill="0.8">
+<clearance class="0" value="0.8"/>
+<clearance class="1" value="0.8"/>
+<clearance class="2" value="0.8"/>
 </class>
 </classes>
 <parts>
@@ -13755,7 +13760,7 @@ motori</text>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="2">
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="233.68" y1="68.58" x2="228.6" y2="68.58" width="0.1524" layer="91"/>
@@ -13899,7 +13904,7 @@ motori</text>
 <wire x1="124.46" y1="124.46" x2="124.46" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+9V" class="0">
+<net name="+9V" class="2">
 <segment>
 <wire x1="175.26" y1="160.02" x2="193.04" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="+9V"/>
@@ -14017,7 +14022,7 @@ motori</text>
 <wire x1="12.7" y1="88.9" x2="12.7" y2="167.64" width="0.1524" layer="91" style="longdash"/>
 </segment>
 </net>
-<net name="2Y" class="0">
+<net name="2Y" class="2">
 <segment>
 <junction x="175.26" y="142.24"/>
 <wire x1="170.18" y1="142.24" x2="175.26" y2="142.24" width="0.1524" layer="91"/>
@@ -14035,7 +14040,7 @@ motori</text>
 <label x="182.88" y="53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="1Y" class="0">
+<net name="1Y" class="2">
 <segment>
 <junction x="210.82" y="142.24"/>
 <wire x1="215.9" y1="142.24" x2="210.82" y2="142.24" width="0.1524" layer="91"/>
